@@ -1,0 +1,7 @@
+\babel@toc {english}{}
+\beamer@subsectionintoc {0}{1}{Modelling of the McGurk effect, a multisensory integration illusion}{2}{0}{0}
+\beamer@subsectionintoc {0}{2}{Computer Model}{5}{0}{0}
+\beamer@subsectionintoc {0}{3}{Feature extraction}{7}{0}{0}
+\beamer@subsectionintoc {0}{4}{Results}{9}{0}{0}
+\beamer@subsectionintoc {0}{5}{Future Research}{10}{0}{0}
+\contentsline {section}{References}

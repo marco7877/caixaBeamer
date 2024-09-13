@@ -1,0 +1,44 @@
+\mode<presentation>
+\usepackage{xcolor}
+
+\definecolor{bcblcolor}{RGB}{0,159,218}
+\definecolor{bcblcolor2}{RGB}{195,200,200}
+
+% Frame title
+\defbeamertemplate*{frametitle}{spin}[1][]
+{
+\vskip1cm%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm]{frametitle} 
+  \begin{tikzpicture}
+  \useasboundingbox[fill=white](0,0) rectangle(\the\paperwidth,1.2);
+  \fill[bcblcolor2] (0,0) rectangle(2.95,1.2);
+  \fill[bcblcolor] (3.05,0) rectangle(\the\paperwidth,1.2);
+   \ifx\insertframesubtitle\@empty%
+      {\node[anchor=west, white,font=\large] at (3.2,0.61){\insertframetitle};}
+      \else%
+      {\node[anchor= west, white,font=\large] at (3.2,0.81){\insertframetitle};%
+       \node[anchor= west, white,font=\small] at (3.2,0.41){\insertframesubtitle};}%
+      \fi
+  \end{tikzpicture}
+  \end{beamercolorbox}
+}
+
+%logo
+\setbeamertemplate{headline}{\hfill\includegraphics[width=1.5cm]{bcbl.png}\hspace{0.2cm}\vspace{-1cm}}
+% definition of the footline template
+\defbeamertemplate*{footline}{spin}{%
+  \leavevmode%
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm]{bcblcolor}%
+    \makebox[2em][l]{{\usebeamerfont{bcblcolor2}\textcolor{black}{\insertframenumber}}}%
+    {\usebeamercolor{bcblcolor}\insertshorttitle}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm]{date in head/foot}%
+    \usebeamerfont{bcblcolor2}\insertshortdate%
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm,right]{bcblcolor}%
+    \includegraphics[width=.2\paperwidth,height=2.5ex,keepaspectratio]{SPiNlab.png}\hspace*{2em}%
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\mode<all>

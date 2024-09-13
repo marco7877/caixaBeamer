@@ -1,0 +1,133 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ragged2e}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{multimedia}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{color}
+%\hypersetup{bookmarksopen=true, bookmarksopenlevel=1}
+
+
+\title[Multi-echo fMRI for overt speech production ]{Multi-echo fMRI for overt speech production } 
+\date{September, 2024 }
+\author{Flores-Coronado M.A., Martin C. \& Caballero-Gaudes C. \vspace{1.4cm}
+\includegraphics[width=0.5\textwidth]{images/BCBL_SPiN}}
+
+
+\usetheme{spin}
+
+\begin{document}
+
+\begin{frame}
+	\maketitle
+\end{frame}
+
+
+\subsection{Research objectives}
+
+\begin{frame}
+\frametitle{Research objectives}
+\begin{columns}
+\column{.6\textwidth}
+\begin{small}
+\begin{itemize}
+	\item<1>{Optimize acquisition sequence parameters for speech production experiments (reduce artifacts)}
+\item<2>{Develop denoising fMRI methods taylored overt speech production experiments}
+\end{itemize}
+\end{small}
+\column{.4\textwidth}
+\includegraphics<1>[width=\textwidth]{images/noise} 
+\includegraphics<2>[width=\textwidth]{images/multiecho} 
+\end{columns}
+\end{frame}
+
+\begin{frame}{Parameter optimization}
+	\begin{columns}
+		\column{.3\textwidth}
+		\begin{center}
+			\begin{small}
+				\textbf{Summary}
+			\end{small}
+		\end{center}
+		\begin{small}
+			\begin{itemize}
+				\item<1-4>[]{Thermal noise reduction (single echo)}
+				\item<1-4>[]{$2.4 mm$ isometric voxels, whole head, 4 echoes, magnitude + fase + noise}
+			\end{itemize}
+		\end{small}
+		\column{.3\textwidth}
+		\begin{center}
+			\begin{small}
+				\textbf{Explication} 
+			\end{small}
+		\end{center}
+		\begin{center}
+			\includegraphics<1>[width=.6\textwidth]{images/complex_cm}\\
+			\includegraphics<1>[width=.6\textwidth]{images/ricean_cm}\\
+			\includegraphics<2-3>[width=\textwidth]{images/nordic_flow} \\	
+		\column{.3\textwidth} 
+		\begin{center}
+			\begin{small}
+				\textbf{Result} 
+			\end{small}
+		\end{center}
+		\begin{center}
+			\includegraphics<2>[width=.6\textwidth]{images/hydra}\\
+			\includegraphics<3>[width=.7\textwidth]{images/1200OHBM}\\
+			\includegraphics<3>[width=.7\textwidth]{images/1700OHBM}\\ 
+		\end{center}
+	\end{columns}
+\end{frame}
+
+
+%\begin{frame}{Denoising methods}
+%	\begin{columns}
+%		\column{.3\textwidth}
+%		\begin{center}
+%			\begin{small}
+%			\textbf{Summary}
+%			\end{small}
+%				\begin{itemize}
+%			\item<1-4>[]{Denoising speech production artifacts}
+%				\item<1-4>[]{Independent Component Analysis desition tree}
+%			\end{itemize}
+%		\end{center}
+%		\column{.3\textwidth} 
+%		\begin{center}
+%			\begin{small}
+%			\textbf{Explication} 
+%			\end{small}
+%		\end{center}
+%		\begin{center}
+%			\includegraphics<1>[width=.3\textwidth]{images/syllable_habla}\\
+%			\includegraphics<1>[width=.3\textwidth]{images/word_habla}\\ 
+%			\includegraphics<1>[width=.3\textwidth]{images/sentence_habla}\\ 
+%		\end{center}
+%			\column{.3\textwidth} 
+%		\begin{center}
+%			\begin{small}
+%			\textbf{Result} 
+%			\end{small}
+%		\end{center}
+%	\end{columns}
+%\end{frame}
+
+
+
+\begin{frame}{Thanks}
+\begin{flushright}
+\includegraphics<1>[width=.9\paperwidth]{images/thanks}\\
+\end{flushright}
+\end{frame}
+
+\bibliographystyle{apalike}
+\bibliography{Library}
+
+
+
+
+\end{document}

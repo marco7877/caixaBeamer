@@ -1,0 +1,52 @@
+\mode<presentation>
+\usepackage{ragged2e}
+
+
+\setbeamertemplate{background}{
+  \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \fill[color=brown] (0,2) rectangle (\the\paperwidth,\the\paperheight);
+  \fill[color=orange] (0,0) rectangle(2.95,1.9);
+  \fill[color=blue!50!cyan!80] (3.05,0) rectangle(\the\paperwidth,1.9);
+  \ifnum\thepage>1\relax%
+   \fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+   \fi
+  \end{tikzpicture}
+}
+
+% Title page
+\mode<presentation>
+
+
+% Title page
+% Comment for white background
+\defbeamertemplate*{title page}{spin}[1][]
+{ 
+  \begin{tikzpicture}[overlay, remember picture]
+    \node[inner sep=0pt,outer sep=0pt,anchor=north east] at (current page.north east)
+    {\includegraphics[width=\the\paperwidth,height=\the\paperheight]{titleblack.pdf}};
+  \end{tikzpicture}
+    \vskip2cm%
+    %% "title page header"  defines the loaded colors.
+    \begin{beamercolorbox}[ leftskip = .4\paperwidth, sep=8pt,#1]{title page header}
+      \usebeamerfont{title}\LARGE\inserttitle\par%
+    \end{beamercolorbox}%
+    \vskip0.75cm%
+    \begin{beamercolorbox}[wd=12cm, leftskip = .5\paperwidth,#1]{author}
+      \usebeamerfont{author}\textcolor{white}{\insertauthor}%
+    \end{beamercolorbox}
+     \vskip0.2cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=.5\paperwidth,#1]{date}
+      \usebeamerfont{author}\textcolor{white}{\insertdate}%
+    \end{beamercolorbox}
+  \vfill
+}
+
+
+% Items
+\setbeamertemplate{items}[circle]
+\setbeamertemplate{sections/subsections in toc}[square]
+
+\mode
+<all>
+
