@@ -1,6 +1,0 @@
-\babel@toc {english}{}
-\beamer@subsectionintoc {0}{1}{Research queries}{2}{0}{0}
-\beamer@subsectionintoc {0}{2}{Modelling of the McGurk effect, a multisensory integration illusion}{6}{0}{0}
-\beamer@subsectionintoc {0}{3}{Computer Model}{9}{0}{0}
-\beamer@subsectionintoc {0}{4}{Feature extraction}{11}{0}{0}
-\beamer@subsectionintoc {0}{5}{Results}{13}{0}{0}
